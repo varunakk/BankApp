@@ -1,11 +1,12 @@
 name: 'Notify users on file change'
 on:
   push:
-    branches: [ master ]
+    branches: ["*"]
 jobs:
   notif:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: danthe1st/email-filechange-notif-action@v1
         with: 
           # Address to send E-Mails from
