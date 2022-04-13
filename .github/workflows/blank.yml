@@ -28,13 +28,13 @@ jobs:
           node-version: '17.x'
       - run: npm install
       - run: npx testing-library-envinfo react  #  npm test
-  deploy:
-    runs-on: ubuntu-latest
-    needs: [build]
-    steps:
-      - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.12.12 
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "iiitsbank"
-          heroku_email: "varunakrishna1@gmail.com"
+  #deploy:
+  #  runs-on: ubuntu-latest
+  #  needs: [build]
+  #  steps:
+  #    - uses: actions/checkout@v2
+  #    - uses: akhileshns/heroku-deploy@v3.12.12 
+  #      with:
+  #        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+  #        heroku_app_name: "iiitsbank"
+  #        heroku_email: "varunakrishna1@gmail.com"
