@@ -12,6 +12,8 @@ jobs:
           # Required mail server address:
           server_address: smtp.gmail.com
           server_port: 465
+          username: ${{secrets.SMTP_USER}}
+          password: ${{secrets.SMTP_PASSWORD}}
           subject: Github Actions job result
           to: "venkateshkhandavilli326@gmail.com"
           from: "varunakrishna1@gmail.com"
