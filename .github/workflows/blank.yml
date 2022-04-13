@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: '14.x'
       - run: npm install
-      - run: npm test
+      - run: npx testing-library-envinfo react  #  npm test
   deploy:
     runs-on: ubuntu-latest
     needs: [build]
