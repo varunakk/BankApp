@@ -6,7 +6,7 @@ jobs:
   notif:
     runs-on: ubuntu-latest
     steps:
-      - uses: danthe1st/email-fi  lechange-notif-action@v1
+      - uses: danthe1st/email-filechange-notif-action@v1
         with: 
           # Address to send E-Mails from
           senderEmail: "varunakrishna1@gmail.com"
