@@ -1,3 +1,10 @@
+if(process.env.NODE_ENV === 'production') {
+  // set static folder
+  app.use(express.static('./../src/'));
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../', 'src', 'App.js'));
+  });
+
 const express =require("express");
 const mongoose=require("mongoose");
 const app=express();
