@@ -31,6 +31,7 @@ function Main({user}){
       setBl(ac);
       setAcc(accn);
       console.log(ac);
+      console.log("user.",res.data);
       return;
 
   }).catch((err)=>{
