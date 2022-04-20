@@ -16,7 +16,6 @@ const linkStyle = {
   color: "#FFF"
 };
 
-import users from "./assets/users.json";
 function Main({user}){
 
   const [bl,setBl]=useState("");
