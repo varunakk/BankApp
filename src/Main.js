@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { useState,useEffect } from "react";
 import store from "./store";
 import axios from "axios";
-
 const NavUnlisted = styled.ul`
   text-decoration: none;
   font-size: 1.3rem;  
