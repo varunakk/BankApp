@@ -21,10 +21,10 @@ function Main({user}){
   const [bl,setBl]=useState("");
   const [accn,setAcc]=useState("");
 
-
+//+store.getState().user;
   const gu=async()=>{
     console.log(store.getState().user);
-    const st="http://localhost:5000/users/"+store.getState().user;
+    const st="https://iiitsbank.herokuapp.com:5000/users/vineeta"
     console.log("user in gu",st);
     axios.get(st).then((res)=>{
       const ac=res.data.balance;
