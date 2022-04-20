@@ -22,7 +22,7 @@ const url="mongodb://localhost/bank";
 //   // perform actions on the collection object
 //   console.log("servervv")
 //   client.close();
-// });
+//  });
 mongoose.connect(
   "mongodb+srv://vikram:vikram123@cluster0.uszdr.mongodb.net/Bank?retryWrites=true&w=majority",
   {
