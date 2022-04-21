@@ -14,12 +14,12 @@ function Login(){
     const LoginUser=()=>{
         let b=1;
        if(!usrname1) {
-      response.status(400).json("enter username");
+ //     response.status(400).json("enter username");
 // stop further execution in this callback
       return;
   }
   if(!Password1) {
-      response.status(400).json("enter password");
+ //     response.status(400).json("enter password");
 // stop further execution in this callback
       return;
   }
@@ -30,14 +30,14 @@ console.log(st)
    console.log("res data  ... ",res.data);
    if(res.data.password==Password1){
     console.log("success");
-    response.status(200).json("user authenticated");
+  //  response.status(200).json("user authenticated");
    store.dispatch({type:"loginSuccess" ,payload:{ user:usrname1} });
             history.push("/Main");// redirecting 
    }
 }).catch((err)=>{
 //alert("Log Fail");
    console.log("log fail");
-   response.status(400).json("user does not exist");
+   //response.status(400).json("user does not exist");
     store.dispatch({type:"loginFail"}); 
    return;
   
