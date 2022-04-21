@@ -1,4 +1,4 @@
-import api from './api/loan_api';
+
 import {useHistory} from "react-router-dom";
 import { useState } from "react";
 import loan from  "./assets/loan.json";
