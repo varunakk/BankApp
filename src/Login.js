@@ -14,18 +14,14 @@ function Login(){
     const LoginUser=()=>{
         let b=1;
        if(!usrname1) {
- //     response.status(400).json("enter username");
-// stop further execution in this callback
       return;
   }
   if(!Password1) {
- //     response.status(400).json("enter password");
-// stop further execution in this callback
       return;
   }
-//console.log("sds")
-const st="https://iiitsbankbackend.herokuapp.com/users/"+usrname1;
+     const st="https://iiitsbankbackend.herokuapp.com/users/"+usrname1;
 console.log(st)
+     console.log(usrname1);
   axios.get(st).then((res)=>{// axios sends the http async req to end points , here we are sending to port o 4000.
    console.log("res data  ... ",res.data);
    if(res.data.password==Password1){
@@ -36,7 +32,7 @@ console.log(st)
    }
 }).catch((err)=>{
 //alert("Log Fail");
-   console.log("log fail");
+   console.log("1log fail");
    //response.status(400).json("user does not exist");
     store.dispatch({type:"loginFail"}); 
    return;
