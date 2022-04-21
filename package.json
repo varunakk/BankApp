@@ -34,7 +34,7 @@
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "heroku-postbuild": "npm run build",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "build": "react-scripts --openssl-legacy-provider build && (cd backend && yarn install)",
     "test": "react-scripts --openssl-legacy-provider test",
     "eject": "react-scripts --openssl-legacy-provider eject"
   },
