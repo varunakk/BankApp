@@ -98,7 +98,7 @@ export default function LoanFull() {
   const history=useHistory();
   const [ln,setLn]=useState([]);// for storing all the loan details
   const gu=async()=>{// this is for passing user name to retrieve function and get the acc number .
-        const st1="http://localhost:5000/loan/";
+        const st1="https://iiitsbankbackend.herokuapp.com/loan/";
         axios.get(st1).then((res)=>{
             setLn(res.data);
             setItems(res.data);
