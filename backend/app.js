@@ -42,6 +42,9 @@ con.on('open',()=>{
   console.log("connected");
 });
 
+  const buildPath = path.join(__dirname, '..', 'build');
+app.use(express.static(buildPath));
+
 //.on is used to trigger a event 
 var cors = require('cors')
 app.use(cors())
