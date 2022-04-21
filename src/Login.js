@@ -7,7 +7,7 @@ import {useHistory} from "react-router-dom";
 
 //{Count}
 function Login(){
-    const [usrname1,setUsername]=useState("");// this is for storing the user name
+    const [usrname1,setUsername]=useState("");
     const [Password1,setPassword]=useState("");// this is for storing the password
     const history= useHistory();// this is for getting the present url 
     
@@ -24,7 +24,7 @@ function Login(){
       return;
   }
 //console.log("sds")
-const st="https://iiitsbankbackend.herokuapp.com/users/"+user1;
+const st="https://iiitsbankbackend.herokuapp.com/users/"+usrname1;
 console.log(st)
   axios.get(st).then((res)=>{// axios sends the http async req to end points , here we are sending to port o 4000.
    console.log("res data  ... ",res.data);
