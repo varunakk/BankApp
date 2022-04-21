@@ -23,7 +23,7 @@ function Main({user}){
 //+store.getState().user;
   const gu=async()=>{
     console.log(store.getState().user);
-    const p=(store.getState().user;
+    const p=store.getState().user;
     const st="https://iiitsbankbackend.herokuapp.com/users/"+p;
     console.log("user in gu",st);
     axios.get(st).then((res)=>{
